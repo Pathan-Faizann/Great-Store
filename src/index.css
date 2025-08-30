@@ -1,0 +1,31 @@
+#root{
+  width: 100vw;
+}
+.card{
+  min-height: 400px;
+  width: 300px;
+ 
+
+}
+.dif:hover{
+  scale: 1.2;
+}
+.card>button{
+  margin-top: auto;
+}
+img{
+  height: 200px;
+  transition: all 0.4s ease;
+  overflow: hidden;
+ 
+}
+@media (max-width:480px) {
+  .card{
+    min-height: 100px;
+    width: 200px;
+  }
+  img{
+    height: 100px;
+  }
+  
+}
