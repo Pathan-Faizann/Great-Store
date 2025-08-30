@@ -1,4 +1,4 @@
-import {createBrowserRouter,RouterProvider} from "react-router-dom"
+import {createHashRouter,RouterProvider} from "react-router-dom"
 import Login from './components/Login'
 import { Link } from 'react-router-dom'
 import Register from "./components/Register"
@@ -23,7 +23,7 @@ function App() {
       localStorage.getItem("islogged")==="true"
     ) 
   
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path:"/",
       element:<><Navbar/><Home/></>
