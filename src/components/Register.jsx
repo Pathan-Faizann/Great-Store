@@ -93,7 +93,7 @@ const Register = () => {
     </div>
       </div>
     </div>
-     <div className='col-md-5 d-flex justify-content-center justify-self-start'><img className='img-fluid rounded-pill animate__animated animate__fadeInRight animate__slower' src="./reg.jpg" alt="" /></div>
+     <div className='col-md-5 d-flex justify-content-center justify-self-start'><img className='img-fluid reg-img rounded-pill animate__animated animate__fadeInRight animate__slower' src="./reg.jpg" alt="" /></div>
     <div className='col-md-1'></div>
   </div>
     </div>
