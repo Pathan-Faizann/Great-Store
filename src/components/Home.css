@@ -4,3 +4,9 @@
   width: 100%;
   background-size: cover;
 }
+
+@media (max-width:480px) {
+  .tagline{
+    margin-top: 18%;
+  }
+}

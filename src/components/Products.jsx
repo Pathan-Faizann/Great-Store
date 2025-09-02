@@ -56,8 +56,8 @@ const Products = () => {
       <div key={d.id} className="card shadow mb-4 rounded-pill ">
   <img src= {d.images[0]} className="card-img-top dif img-fluid" alt="..."/>
   <div className="card-body d-flex flex-column justify-content-center align-items-center">
-    <span className="card-title text-center fs-4">{d.title}</span><br />
-    <span className="card-text fs-5">Price : ${d.price}</span>
+    <span className="card-title text-center fs-4">{d.title}</span>
+    <span className="card-text price px-sm-5 rounded-pill my-3 fs-5">Price : ${d.price}</span>
     <div className='btn-group'>
       
 
