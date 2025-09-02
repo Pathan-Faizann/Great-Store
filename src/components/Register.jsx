@@ -76,7 +76,7 @@ const Register = () => {
     <div className="container1 col-md-5 animate__animated animate__fadeInLeft animate__slower" >
       <div>
         <h1 className='mt-1  mb-3 text-center animate__bounceIn animate__slow'>Register </h1>
-    <div id='form' className='form border shadow p-5'>
+    <div id='form' className='form reg-form border shadow p-5'>
       <label className='form-label fs-4 mt-1 ms-2' htmlFor="">Name </label>
         <input type="text" className='form-control rounded-pill' value={name} required onChange={(e)=>setName(e.target.value)}/>
         <label className='form-label fs-4 mt-3 ms-2' htmlFor="">Username </label>

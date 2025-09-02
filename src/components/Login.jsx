@@ -11,7 +11,8 @@ const Login = () => {
     const users = JSON.parse(localStorage.getItem("users"))
    
     const navigate = useNavigate()
-     function check(){
+     function check(e){
+      e.preventDefault();
     const userFound = users.find(user=>
       user.id === newdata && user.pass === newpass
     )
@@ -42,11 +43,11 @@ const Login = () => {
 
     <div className='row align-items-center'>
       <div className='col-md-1'></div>
-      <div className='col-md-5'> <img src="./login.jpeg" className='img-fluid animate__animated animate__fadeInLeft animate__slower' alt="" /></div>
-    <div className='container col-md-5 animate__animated animate__fadeInRight animate__slower'>
+      <div className=' col-12 col-md-5 col-sm-6'> <img src="./login.jpeg" className='img-fluid animate__animated animate__fadeInLeft animate__slower' alt="" /></div>
+    <div className='container col-md-5 col-12 col-sm-6 animate__animated animate__fadeInRight animate__slower'>
       <div className=' row justify-content-center'>
         <h1 className='mb-5 mt-3 text-center animate__bounceIn animate__slow'>Login </h1>
-<div id='form' className='form border shadow p-5'>
+<div id='form' className='form login-form border shadow p-5'>
         <label className='form-label ms-2 fs-3 mt-5' htmlFor="">Username </label>
         <input type="text" className='form-control rounded-pill' value={newdata} onChange={(e)=>setnewData(e.target.value)} />
         <label className='form-label ms-2 fs-3 mt-4' htmlFor="">Password </label>

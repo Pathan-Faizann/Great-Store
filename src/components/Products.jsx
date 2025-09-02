@@ -52,7 +52,7 @@ const Products = () => {
     {data.map((d)=>{
     const inCart = cart.find((item)=>item.id === d.id)
      return (
-      <div className='col-md-4 d-flex justify-content-center'>
+      <div className='col-md-4 col-sm-6 d-flex justify-content-center'>
       <div key={d.id} className="card shadow mb-4 rounded-pill ">
   <img src= {d.images[0]} className="card-img-top dif img-fluid" alt="..."/>
   <div className="card-body d-flex flex-column justify-content-center align-items-center">
